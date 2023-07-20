@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>網頁設計範例</title>
+    
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            justify-items: center;
+        }
+        .canvas-container {
+            display: flex;
+            justify-content: center;
+        }
+        .items {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            border: 1px solid black; /* 加框線 */
+        }
+
+        #time {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="time"></div>
+    <br><br><br>
+    <div class="container">
+        <div id="locationName" class="item"></div>
+        <div id="startTime" class="item"></div>
+        <div id="PoP" class="item"></div>
+        <div id="Wx" class="item"></div>
+        <div id="AT" class="item"></div>
+        <div id="T" class="item"></div>
+        <div id="RH" class="item"></div>
+        <div id="CI" class="item"></div>
+        <div id="WeatherDescription" class="item"></div>
+        <div id="WS" class="item"></div>
+        <div id="WD" class="item"></div>
+        <div id="Td" class="item"></div>
+        <div class="canvas-container">
+            <canvas id="barChart" width="400" height="300"></canvas>
+          </div>
+    </div>
+    <div>
+        <div id="Time1"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
